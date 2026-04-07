@@ -21,7 +21,7 @@ const insurancePhones = {
   "Allied Benefits": "3129068080",
   "Allied Industries": "2155641739",
   "AllState": "8887103483",
-  "AllState": "8008187610",
+  "AllState(Alt)": "8008187610",
   "AMA Insurance Agency Inc": "8886275883",
   "AMERICHOICE MD HMO": "8883623368",
   "Americhoice of NJ": "8883623368",

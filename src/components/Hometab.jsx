@@ -1,5 +1,5 @@
 import React from 'react'
-import Mue from './Mue.JSX';
+import Mue from './Mue.jsx';
 import Insnumbers from './Insnumbers.jsx';
 
 const Hometab = () => {
