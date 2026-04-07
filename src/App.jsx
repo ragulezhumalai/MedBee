@@ -3,7 +3,7 @@ import NavBar from './components/NavBar.jsx'
 import Time from './components/Time.jsx'
 import Hometab from './components/Hometab.jsx'
 import './App.css'
-import Mue from './components/Mue.JSX';
+import Mue from './components/Mue.jsx';
 
 
 
