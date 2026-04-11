@@ -18,10 +18,13 @@ export default function App() {
 if(tab==="Home"){
   main= <Hometab />
 }
-else if(tab==="social"){
-  main= <div>Socials coming soon...</div>
-}else if(tab==="about"){
+else if(tab==="Policies"){
+  main= <div>Policies coming soon...</div>
+}else if(tab==="About"){
   main= <div>About me coming soon...</div>
+}
+else if(tab==="Tools"){
+  main= <div>Tools coming soon...</div>
 }
   return (
     
@@ -34,7 +37,7 @@ else if(tab==="social"){
   color3="#162325"
   className="main relative h-screen overflow-hidden bg-black text-white overflow-y-auto">
 
-     
+     This side is in development, check back later for updates!
 
        <NavBar switchTab={swi} />
 <div className='flex flex-col  relative  z-10 mx-5'>

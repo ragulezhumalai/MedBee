@@ -24,9 +24,9 @@ export default function NavBar({switchTab}) {
       >
         <ul className="flex   justify-evenly  w-[100%] items-stretch px-4 py-2 gap-2"> 
         <button onClick={()=>changeTab("Home")} className="">Home</button>
-        <button onClick={()=>changeTab("project")} className="">Projects</button>
-        <button onClick={()=>changeTab("social")} className="">Social</button>
-        <button onClick={()=>changeTab("about")} className="">About</button>
+        <button onClick={()=>changeTab("Tools")} className="">Tools</button>
+        <button onClick={()=>changeTab("Policies")} className="">Policies</button>
+        <button onClick={()=>changeTab("About")} className="">About</button>
         </ul>
        
       </LiquidGlass>
