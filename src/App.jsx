@@ -37,7 +37,7 @@ else if(tab==="Tools"){
   color3="#162325"
   className="main relative h-screen overflow-hidden bg-black text-white overflow-y-auto">
 
-     This side is in development, check back later for updates!
+     This site is in development, check back later for updates!
 
        <NavBar switchTab={swi} />
 <div className='flex flex-col  relative  z-10 mx-5'>
