@@ -4,8 +4,7 @@ import Time from './components/Time.jsx'
 import Hometab from './components/Hometab.jsx'
 import './App.css'
 import Mue from './components/Mue.jsx';
-
-
+import Balatro from './components/Balatro.jsx'
 
 
 export default function App() {
@@ -26,7 +25,14 @@ else if(tab==="social"){
 }
   return (
     
-    <div className="main relative h-screen overflow-hidden bg-black text-white overflow-y-auto">
+    <Balatro 
+    isRotate={false}
+  mouseInteraction={false}
+  pixelFilter={2000}
+  color1="#DE443B"
+  color2="#006BB4"
+  color3="#162325"
+  className="main relative h-screen overflow-hidden bg-black text-white overflow-y-auto">
 
      
 
@@ -42,7 +48,7 @@ else if(tab==="social"){
       
       
 
-    </div>
+    </Balatro>
   )
 }
     
