@@ -1,3 +1,26 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@525&display=swap');
+
+body{
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 525;
+  font-style: normal;
+}
+
+.mueOutput{
+     animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% { -webkit-filter: blur(12px); filter: blur(12px); opacity: 0; }
+  100% { -webkit-filter: blur(0); filter: blur(0); opacity: 1; }
+}
+@keyframes focus-in-expand-fwd {
+  0% {  filter: blur(12px); opacity: 0; }
+  100% { filter: blur(0); opacity: 1; }
+}
+
+
 
 
