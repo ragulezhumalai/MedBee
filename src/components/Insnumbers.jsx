@@ -101,7 +101,7 @@ const Insnumbers = () => {
 
 
   return (
-    <div className="flex-col relative justify-between py-3 md:w-[30%]  my-6 px-1 h-[55vh] overflow-y-auto border-2 rounded-2xl border-white/30 scrollbar-hide">
+    <div className="flex-col relative justify-between overflow-y-auto py-7 md:w-[30%]  my-6 px-1 h-[55vh] border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
        <div className=' w-[90%] mx-4 text-center z-999'>Insurance Phone Numbers</div>
         <ul >
       {Object.entries(insurancePhones).map(([name, phone]) => (
