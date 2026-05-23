@@ -38,7 +38,7 @@ const zones = {
         saturation={2.3}
         elasticity={1}
         displacementScale={2}
-         className=" flex my-6 sm:w-auto gap-6 py-2 border-1 inset-shadow-white border-white border-white/30 top-10">
+         className=" flex my-6 sm:w-auto gap-6 py-2 border-1 inset-shadow-white  border-white border-white/30 top-10">
       {Object.entries(zones).map(([label, zone]) => (
         <div key={label} className="text-center px-2">
           <div className="text-m font-semibold ">{label}</div>
