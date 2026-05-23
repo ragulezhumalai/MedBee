@@ -33,20 +33,20 @@ if(result){
 
   return (
     <LiquidGlass 
-        blur={2}
+        blur={3}
         
         contrast={1.2}
         brightness={1.1}
         saturation={2.0}
         elasticity={0.50}
-        
+        tintColor="#162325"
         displacementScale={1}
       
-    className='mueOutput mt-4 md:m-5  min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
+    className='mueOutput mt-4 md:m-5 min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
       <div className='text-center font-bold text-2xl'><span className='text-3xl'>MUE</span><br></br>  Edits Lookup</div>
 
       <form onSubmit={getMue} className='p-4 m-5 flex'>
-    <input type="text" onChange={e=>setCpt(e.target.value)} className='border-7 border-blue-100/50 outline-1 outline-blue-100/70 p-2 m-2 rounded-3xl text-center font-bold' />
+    <input type="text" onChange={e=>setCpt(e.target.value)} className='border-7 border-blue-100/50 hover:shadow-[0_0_20px_rgba(59,250,246)] transition duration-200  outline-1 outline-blue-100/70 p-2 m-2 rounded-3xl text-center font-bold' />
     <button
     children
     zIndex={2}

@@ -23,7 +23,7 @@ if(tab==="Home"){
 else if(tab==="Policies"){
   main= <div>Policies coming soon...</div>
 }else if(tab==="About"){
-  main= <div>About me coming soon...</div>
+  main= <div>About coming soon...</div>
 }
 else if(tab==="Tools"){
   main= <Tools />
@@ -54,8 +54,6 @@ else if(tab==="Tools"){
   
   </div>
       
-      
-
     </Balatro>
   )
 }

@@ -131,7 +131,9 @@ export default function Balatro({
     let program;
 
     function resize() {
-      renderer.setSize(container.offsetWidth, container.offsetHeight);
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      renderer.setSize(w, h);
       if (program) {
         program.uniforms.iResolution.value = [gl.canvas.width, gl.canvas.height, gl.canvas.width / gl.canvas.height];
       }
@@ -173,29 +175,30 @@ export default function Balatro({
       renderer.render({ scene: mesh });
     }
     animationFrameId = requestAnimationFrame(update);
-    // ensure canvas fills the container and sits behind any children
-    gl.canvas.style.position = 'absolute';
+    // render the background as a full-screen fixed canvas so it remains
+    // visible while the page scrolls (prevents the background from ending)
+    gl.canvas.style.position = 'fixed';
     gl.canvas.style.top = '0';
     gl.canvas.style.left = '0';
     gl.canvas.style.width = '100%';
     gl.canvas.style.height = '100%';
     gl.canvas.style.zIndex = '0';
-    container.appendChild(gl.canvas);
+    gl.canvas.style.pointerEvents = 'none';
+    document.body.appendChild(gl.canvas);
 
     function handleMouseMove(e) {
       if (!mouseInteraction) return;
-      const rect = container.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width;
-      const y = 1.0 - (e.clientY - rect.top) / rect.height;
+      const x = e.clientX / window.innerWidth;
+      const y = 1.0 - e.clientY / window.innerHeight;
       program.uniforms.uMouse.value = [x, y];
     }
-    container.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
       window.removeEventListener('resize', resize);
-      container.removeEventListener('mousemove', handleMouseMove);
-      if (container.contains(gl.canvas)) container.removeChild(gl.canvas);
+      window.removeEventListener('mousemove', handleMouseMove);
+      if (document.body.contains(gl.canvas)) document.body.removeChild(gl.canvas);
       gl.getExtension('WEBGL_lose_context')?.loseContext();
     };
   }, [

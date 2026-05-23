@@ -1,12 +1,49 @@
-import React from 'react'
+import {React,useState} from 'react'
 import Auth from './tools/auth'
+import Mue from './Mue'
+import ToolWrapper from './toolWrapper'
+
 
 
 const tools = () => {
-  return (
-    <div >
-      <Auth />
+
+    const [currentTool,setCurrentTool]=useState("alltools")
+    const [activetool,setActiveTool]=useState(false)
+
+    const settingTools=(set)=>{
+      setCurrentTool(set)
+        setActiveTool(true)
       
+    }
+
+  
+    
+    let livetool;
+  if(currentTool==="Mue"){
+   
+    livetool=<Mue />
+   
+    
+  }
+  else if(currentTool==="Auth"){
+    livetool=<Auth />
+   
+  }
+
+
+
+
+
+
+  return (
+    <div >{activetool===true ? <button onClick={()=>setActiveTool(false)}>back</button> : null} 
+  
+    {activetool ? livetool : <ToolWrapper nowTools={settingTools} />  }
+    {}
+  
+  
+
+       
     </div>
   )
 }
