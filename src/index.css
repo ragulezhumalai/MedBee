@@ -21,6 +21,22 @@ body{
   100% { filter: blur(0); opacity: 1; }
 }
 
+.inset{
+  box-shadow: inset 0px 0px 2px 2px #ffffff50;
+  border-radius: 30px;
+}
 
+.insetxl{
+  box-shadow: inset 0px 0px 500px 3px #ffffff;
+  border-radius: 40px;
+}
+
+.home{
+  border-radius: 200px;
+}
+
+.authtab{
+  
+}
 
 

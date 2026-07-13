@@ -5,19 +5,17 @@ const auth = () => {
   return (
     <LiquidGlass
     
-     blur={2}
-        
+        blur={2}
         contrast={1.2}
         brightness={1.1}
-        saturation={2.0}
+        saturation={2.0}  
         elasticity={0.50}
-        
         displacementScale={1}
-        className=' mueOutput mt-4 md:m-5  min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
+        className=' mueOutput    min-h-[50%] h-[50%] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[60%]'>
           Auth Lookup Tools
-      <ul className="grid grid-cols-1 md:grid-cols-5 gap-5 p-4 m-5 text-left outline w-[95%] h-[90%] item-center"> 
+      <ul className="grid grid-cols-1 md:grid-cols-5 gap-5 p-4 text-left w-[95%] h-[90%] item-center"> 
         <LiquidGlass Children className=" outline text-center"><a href="https://www.cgsmedicare.com/medicare_dynamic/jc/pa/pa.aspx" target="_blank">CGS Medicare</a></LiquidGlass>
-        <li className=" outline text-center"><a href="https://www.aetna.com/health-care-professionals/precertification/precertification-lists.html" target="_blank">Aetna</a></li>
+        <li className=" authtab outline text-center"><a href="https://www.aetna.com/health-care-professionals/precertification/precertification-lists.html" target="_blank">Aetna</a></li>
         <li className=" outline text-center"><a href="https://provider.healthybluemo.com/missouri-provider/resources/precertification-lookup" target="_blank">Anthem Missouri</a></li>
         <li className=" outline text-center"><a href="https://providers.anthem.com/wisconsin-provider/claims/prior-authorization-lookup-tool" target="_blank">Anthem Wisconsin</a></li>
         <li className=" outline text-center"><a href="https://www.wellcare.com/en/authorization-lookup" target="_blank">Wellcare</a></li>

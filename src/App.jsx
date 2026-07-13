@@ -7,6 +7,7 @@ import Mue from './components/Mue.jsx';
 import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
+import Insnumbers from './components/Insnumbers.jsx';
 
 
 export default function App() {
@@ -45,10 +46,11 @@ else if(tab==="Tools"){
 <div className=' flex flex-col relative z-10 mx-3'>
   
   <Time />
-  
-   <div className=' my-4 mx-2.3'>
-
-   {main}
+    
+   <div className=' h-[90%] mt-6  flex flex-col-reverse justify-evenly md:flex-row outline-4 justify-between'>
+<Insnumbers />
+<div className="div md:w-3xl h-[383px] m-2 max-w-3xl">{main}</div>
+   
     </div>
   
   

@@ -42,7 +42,7 @@ if(result){
         tintColor="#162325"
         displacementScale={1}
       
-    className='mueOutput mt-4 md:m-5 min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
+    className='mueOutput  md:m-5 min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
       <div className='text-center font-bold text-2xl'><span className='text-3xl'>MUE</span><br></br>  Edits Lookup</div>
 
       <form onSubmit={getMue} className='p-4 m-5 flex'>
