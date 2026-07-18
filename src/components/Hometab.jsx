@@ -14,7 +14,8 @@ const Hometab = () => {
         saturation={2.3}
         elasticity={1}
         displacementScale={2} className=" m-0 p-0">
-      <img src="/src/assets/main.jpg" alt="" />
+          <div><img src="/src/assets/main.jpg" alt="" /></div>
+      
     </LiquidGlass>
 
     </div>
