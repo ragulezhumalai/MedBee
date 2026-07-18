@@ -47,7 +47,7 @@ else if(tab==="Tools"){
   
   <Time />
     
-   <div className=' h-[90%] mt-6  flex flex-col-reverse justify-evenly md:flex-row outline-4 justify-between'>
+   <div className=' h-[90%] mt-6  flex flex-col-reverse justify-evenly md:flex-row justify-between'>
 <Insnumbers />
 <div className="div md:w-3xl h-[383px] m-2 max-w-3xl">{main}</div>
    
