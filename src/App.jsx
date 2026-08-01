@@ -8,6 +8,7 @@ import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
+import Ballpit from './components/Ballpit.jsx';
 
 
 export default function App() {
@@ -31,25 +32,27 @@ else if(tab==="Tools"){
 }
   return (
     
-    <Balatro 
-    isRotate={false}
-  mouseInteraction={false}
-  pixelFilter={2000}
-  color1="#DE443B"
-  color2="#006BB4"
-  color3="#162325"
-  className="main relative h-screen bg-black text-white overflow-y-auto ">
+    <Balatro
+    count={100}
+    gravity={0.20}
+    friction={0.9975}
+    wallBounce={0.95}
+    followCursor={false}
 
-     This site is in development, check back later for updates!
+  className="main relative h-screen flex outline bg-black text-white overflow-y-auto ">
 
-       <NavBar switchTab={swi} />
-<div className=' flex flex-col relative z-10 mx-3'>
-  
-  <Time />
-    
-   <div className=' h-[90%] mt-6  flex flex-col-reverse justify-evenly md:flex-row justify-between'>
+
+     <div className=" outline-2"> 
+      <NavBar switchTab={swi} /> 
+      </div>  
+      {/* Time bar Section */}
+<div className=' flex flex-col relative z-10 mx-3 mt-3'>
+ 
+ <div className=" flex justify-center items my-6 max-w-[100%]"><Time /></div> 
+    {/* Main Section */}
+   <div className=' mt-6   flex flex-col-reverse justify-evenly items-center md:flex-row '>
 <Insnumbers />
-<div className="div md:w-3xl h-[383px] m-2 max-w-3xl">{main}</div>
+<div className="md:w-[90%] max-w-3xl">{main}</div>
    
     </div>
   
