@@ -42,7 +42,7 @@ else if(tab==="Tools"){
   className="main relative h-screen flex  bg-black text-white overflow-y-auto ">
 
 
-     <div className=" outline-2"> 
+     <div className=""> 
       <NavBar switchTab={swi} /> 
       </div>  
       {/* Time bar Section */}
