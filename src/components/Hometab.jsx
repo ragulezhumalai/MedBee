@@ -1,20 +1,21 @@
 import React from 'react'
 import { LiquidGlass } from '@liquidglass/react';
+import Todowrapper from './todowrapper.jsx';
 
 
 const Hometab = () => {
   return (
     <div 
-    className='inset h-95'>
+    className='insetxl h-95'>
     <LiquidGlass
-    borderRadius={30}
+    borderRadius={40}
         blur={3.0}
         contrast={1}
         brightness={1}
         saturation={2.3}
         elasticity={1}
         displacementScale={2} className=" m-0 p-0">
-          <div><img src="/main.jpg" alt="Hades" /></div>
+          <div className='w-full h-full'> <Todowrapper /></div>
       
     </LiquidGlass>
 

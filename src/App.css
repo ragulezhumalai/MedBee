@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Styling for the root element */
+
+
+/* Global styling for all elements */
+
+
+/* Styling for the body element with a complex background gradient */
+
+/* Styling for the 'App' element */
+
+
+/* Styling for the 'h1' elements */
+/* h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2rem !important;
+} */
+
+/* Styling for the 'TodoWrapper' component */
+.TodoWrapper {
+  padding: 2rem 1rem; 
+  border-radius: 25px;
+  /* border: 1px solid rgba(255, 255, 255, 0.30); */
+  width: 100%;
+  /* outline:2px solid white; */
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the 'TodoForm' component */
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the input field in the 'TodoForm' component */
+.todo-input {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.30);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: calc(100% - 100px);
+  max-width: 300px;
+  color: white;
+  border-radius: 30px;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.60);
+  
+}
+
+/* Styling for the input field placeholder text */
+.todo-input::placeholder {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+/* Styling for the 'Add Task' button in the 'TodoForm' component */
+.todo-btn {
+  color: #ffffff;
+  border: none;
+  padding: 0.43rem 1rem;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.244);
+  box-shadow: inset 0px 0px 2px 2px #ffffff50;
+  backdrop-filter: blur(5px);
+}
+
+/* Focus and active state styles for the 'Add Task' button */
+.todo-btn:focus {
+  outline: none;
+}
+
+.todo-btn:active {
+  outline: none;
+  -webkit-animation: pulsate-bck 1.5s ease-in-out both;
+  animation: pulsate-bck 1.5s ease-in-out both;
+}
+
+/* Keyframes animation for button pulsation */
+@-webkit-keyframes pulsate-bck {
+  0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(0.8); transform: scale(0.8); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+@keyframes pulsate-bck {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* Media query for screens with a minimum width of 800px */
+@media screen and (min-width: 800px) {
+  .Todo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
+/* Styling for the 'No-Todos' element */
+.No-Todos {
+  font-size: 0.8em;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+/* Styling for the image inside the 'No-Todos' element */
+.No-Todos img {
+  width: 150px;
+  max-width: 100%;
+}
+
+h2{
+  color:white;
+}
+
+/* Styling for the 'Todo' element */
+.Todo {
+  flex-grow: 1;
+  margin-bottom: 5px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  border-radius: 23px;
+}
+
+.Todo::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for individual todos in the 'Todos' component */
+.Todos {
+  padding: 10px 15px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.066);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  text-align: left;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Keyframes animation for expanding and focusing in */
+@-webkit-keyframes focus-in-expand-fwd {
+  0% { letter-spacing: -0.5em; -webkit-transform: translateZ(-800px); transform: translateZ(-800px); -webkit-filter: blur(12px); filter: blur(12px); opacity: 0; }
+  100% { -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-filter: blur(0); filter: blur(0); opacity: 1; }
+}
+@keyframes focus-in-expand-fwd {
+  0% { letter-spacing: -0.5em; transform: translateZ(-800px); filter: blur(12px); opacity: 0; }
+  100% { transform: translateZ(0); filter: blur(0); opacity: 1; }
+}
+
+.Todos:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.Todos p {
+  flex-grow: 1;
+  margin: 0 10px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.faTrash {
+  padding: 5px;
+  color: #ff4d4d;
+  margin: 0 5px;
+}
+
+.editTodo {
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.completed {
+  color: #00d118;
+  text-decoration: line-through;
+}
+
+/* Styling for the edit input field within the 'EditTodoForm' component */
+.edit-input {
+  background: none;
+  border: 2px dashed rgba(255, 255, 255, 0.30);
+  padding: 0.5rem 1rem;
+  width: calc(100% - 100px);
+  max-width: 300px;
+  color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .TodoWrapper {
+    padding: 1.5rem 0.75rem;
+    border-radius: 15px;
+    min-height: 90vh;
+  }
+  
+  .todo-input, .edit-input {
+    width: 60%;
+    min-width: 150px;
+  }
+
+  .todo-btn {
+    padding: 0.43rem 0.8rem;
+  }
+}

@@ -25,6 +25,10 @@ const tools = () => {
    
     
   }
+
+
+
+  
   else if(currentTool==="Auth"){
     livetool=<Auth />
    
@@ -36,7 +40,7 @@ const tools = () => {
 
 
   return (
-    <div className="flex flex-col" >{activetool===true ? <button className="outline w-15  m-1 p-1 inset" onClick={()=>setActiveTool(false)}>◀</button> : null} 
+    <div className="flex  p-2 flex-col" >{activetool===true ? <button className="outline w-15  m-1 p-1 inset" onClick={()=>setActiveTool(false)}>◀</button> : null} 
   
     {activetool ? livetool : <ToolWrapper nowTools={settingTools} />  }
     {}

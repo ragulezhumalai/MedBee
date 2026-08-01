@@ -101,9 +101,10 @@ const Insnumbers = () => {
 
 
   return (
-    <div className="flex-col relative justify-between overflow-y-auto py-7 md:w-[30%]  my-6 px-1 h-[55vh] border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-       <div className=' w-[90%] mx-4 text-center z-999'>Insurance Phone Numbers</div>
-        <ul >
+    <div className=" scrollbar1 flex-col relative text-center justify-between py-7 md:w-[30%]  my-6 px-1 h-[55vh] border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      Insurance Phone Numbers
+       <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
+        <ul className="scrollbar-y-hidden scrollbar1">
       {Object.entries(insurancePhones).map(([name, phone]) => (
         <LiquidGlass 
         blur={5}
@@ -112,11 +113,12 @@ const Insnumbers = () => {
         displacementScale={2}
         shadowIntensity={0.5}
 
-        className='my-2 z-10 py-3 border-1 border-white border-white/30 text-sm bg-[rgba(0, 0, 0, 0.5)]' key={name}>
+        className='my-2 z-10 py-3  border-white border-white/30 text-sm bg-[rgba(0, 0, 0, 0.5)]' key={name}>
           <strong>{name}</strong> : {phone}
         </LiquidGlass>
       ))}
     </ul>
+    </div>
     </div>
     
   )
