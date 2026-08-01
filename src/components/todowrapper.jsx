@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import TodoForm from "./TodoForm";
-import Todo from "./todo";
+import TodoForm from "./TodoForm.jsx";
+import Todo from "./todo.jsx";
 import { v4 as uuidv4 } from 'uuid';
-import EditTodoForm from './EditTodoForm';
+import EditTodoForm from './EditTodoForm.jsx';
 import questMark from '/public/Quest_mark.png'; // Import the question mark image
 
 // Todo Wrapper Component
