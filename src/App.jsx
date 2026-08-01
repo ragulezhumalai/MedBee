@@ -39,7 +39,7 @@ else if(tab==="Tools"){
     wallBounce={0.95}
     followCursor={false}
 
-  className="main relative h-screen flex outline bg-black text-white overflow-y-auto ">
+  className="main relative h-screen flex  bg-black text-white overflow-y-auto ">
 
 
      <div className=" outline-2"> 
