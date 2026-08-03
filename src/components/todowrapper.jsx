@@ -4,6 +4,8 @@ import Todo from "./todo.jsx";
 import { v4 as uuidv4 } from 'uuid';
 import EditTodoForm from './EditTodoForm.jsx';
 
+import questmark from "../assets/Quest_Mark.png";
+
 
 // Todo Wrapper Component
 const Todowrapper = () => {
@@ -49,7 +51,7 @@ const [todos, setTodo] = useState(() => {
       <TodoForm addTodo={addTodo} />
       {todos.length === 0 ? (
         <div className="No-Todos">
-          <img src="/public/Quest_Mark.png" alt="Question Mark"></img>
+          <img src={questmark} alt="Question Mark"></img>
           <h2>No Tasks Yet, Add something.</h2>
         </div>
       ) : (
