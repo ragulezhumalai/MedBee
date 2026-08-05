@@ -38,7 +38,9 @@ else if(tab==="Tools"){
     friction={0.9975}
     wallBounce={0.95}
     followCursor={false}
-
+    color1="#000000"
+    color2="#ffb500"
+  color3="#5b0085"
   className="main relative h-screen flex  bg-black text-white overflow-y-auto ">
 
 
@@ -50,9 +52,9 @@ else if(tab==="Tools"){
  
  <div className=" flex justify-center items my-6 max-w-[100%]"><Time /></div> 
     {/* Main Section */}
-   <div className=' mt-6   flex flex-col-reverse justify-evenly items-center md:flex-row '>
+   <div className=' mt-6  flex flex-col-reverse justify-evenly items-center md:flex-row '>
 <Insnumbers />
-<div className="md:w-[90%] max-w-3xl">{main}</div>
+<div className=" w-[100%] max-w-3xl">{main}</div>
    
     </div>
   
