@@ -12,9 +12,9 @@ const Hometab = () => {
         blur={3.0}
         contrast={1}
         brightness={1}
-        saturation={2.3}
+        saturation={2}
         elasticity={1}
-        displacementScale={2} className=" m-0 p-0">
+        displacementScale={2} className=" m-0 Tint p-0">
           <div className='w-full h-full'> <Todowrapper /></div>
       
     </LiquidGlass>

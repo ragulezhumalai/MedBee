@@ -16,8 +16,8 @@ const changeTool=set=>{
         saturation={2.3}
         elasticity={1}
         displacementScale={2}
-        className="">
-      <ul className='grid grid-cols-1  mueOutput md:grid-cols-auto gap-auto p-4 m-5 text-left w-[95%] h-[90%] item-center'>
+        className="Tint">
+      <ul className='grid  grid-cols-1  mueOutput md:grid-cols-auto gap-auto p-4 m-5 text-left w-[95%] h-[90%] item-center'>
         <button className='  p-4 inset m-1' onClick={()=>changeTool("Mue")} >MUE Edits</button>
         <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("Auth")} >Auth lookup</button>
         <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("Findcare")} >Findcare</button>

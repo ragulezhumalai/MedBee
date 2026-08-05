@@ -52,7 +52,7 @@ const [todos, setTodo] = useState(() => {
       {todos.length === 0 ? (
         <div className="No-Todos">
           <img src={questmark} alt="Question Mark"></img>
-          <h2>No Tasks Yet, Add something.</h2>
+          <h1>No Notes Yet, Add something.</h1>
         </div>
       ) : (
         <div className="Todo">

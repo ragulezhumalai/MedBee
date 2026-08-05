@@ -30,15 +30,15 @@ const zones = {
 
 
   return (
-     <div className='p-0 m-0  max-w-[95%]'>  <LiquidGlass
+     <div className='p-0 m-0  max-w-[97%]'>  <LiquidGlass
      borderRadius={30}
         blur={3.0}
-        contrast={1}
+        contrast={1.5}
         brightness={1}
         saturation={2.3}
         elasticity={1}
         displacementScale={2}
-         className=" max-w-full border-white/30 top-10 ">
+         className=" max-w-full Tint border-white/30 top-10 ">
           <div className="inset m-0 py-3 flex">
       {Object.entries(zones).map(([label, zone]) => (
         <div key={label} className=" optionhover text-center sm:mx-15 px-2">
