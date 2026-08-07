@@ -37,8 +37,8 @@ else if(tab==="Tools"){
       isRotate={false}
       mouseInteraction
     color1="#000000"
-    color2="#ffb500"
-  color3="#5b0085"
+    color2="#e2800ff8"
+  color3="#6f4383fd"
   className="main relative h-screen flex  bg-black text-white overflow-y-auto ">
 
 
