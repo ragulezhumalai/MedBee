@@ -33,11 +33,9 @@ else if(tab==="Tools"){
   return (
     
     <Balatro
-    count={100}
-    gravity={0.20}
-    friction={0.9975}
-    wallBounce={0.95}
-    followCursor={false}
+     pixelFilter={2000}
+      isRotate={false}
+      mouseInteraction
     color1="#000000"
     color2="#ffb500"
   color3="#5b0085"
