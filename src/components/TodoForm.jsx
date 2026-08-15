@@ -31,8 +31,7 @@ const TodoForm = ({ addTodo }) => {
         placeholder="Add a new note..."
       />
       <button type="submit" className="todo-btn">
-        Add Note
-      </button>
+        Add      </button>
     </form>
   );
 };

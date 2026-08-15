@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
+#root{
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 525;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  
+  
+}
 
 body{
     font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 525;
   font-style: normal;
-  
+  margin: 0;
+  padding: 0;
 }
 .Tint{
   background: rgba(255, 255, 255, 0.196);
@@ -30,8 +41,9 @@ body{
 
 
 .inset{
-  box-shadow: inset 0px 0px 2px 2px #ffffff50;
+  box-shadow: inset 0px 0px 3px 2px #ffffff67;
   border-radius: 30px;
+  outline: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .insetxl{

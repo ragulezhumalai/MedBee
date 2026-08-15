@@ -101,26 +101,24 @@ const Insnumbers = () => {
 
 
   return (
-    <div className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center justify-between py-7 md:w-[30%]  my-6 px-1 h-[55vh] border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-      Insurance Phone Numbers
-       <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
-        <ul className="scrollbar-y-hidden scrollbar1">
-      {Object.entries(insurancePhones).map(([name, phone]) => (
-        <LiquidGlass 
+    <LiquidGlass 
         blur={5}
         brightness={1}
         saturation={2.3}
         displacementScale={2}
         shadowIntensity={0.5}
-        shadowColor="rgba(0, 0, 0, 0.5)"
-
-        className='my-2 z-10 py-3 Tint border-white border-white/30 text-sm bg-[rgba(0, 0, 0, 0.5)]' key={name}>
+        shadowColor="rgba(0, 0, 0, 0.5)" className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center justify-between max-h-[55dvh] sm:h-[65vh] sm:max-h-[65vh] w-[100%] md:max-w-[30dvw] m-2.5 border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      Insurance Phone Numbers
+       <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
+        <ul className="scrollbar-y-hidden scrollbar1">
+      {Object.entries(insurancePhones).map(([name, phone]) => (
+        <div className='my-2 z-10 py-3 Todos Tint border-white border-white/30 text-xs bg-[rgba(0, 0, 0, 0.5)]' key={name}>
           <strong>{name}</strong> : {phone}
-        </LiquidGlass>
+        </div>
       ))}
     </ul>
     </div>
-    </div>
+    </LiquidGlass>
     
   )
 }
