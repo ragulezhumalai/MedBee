@@ -47,7 +47,7 @@ const [todos, setTodo] = useState(() => {
 
   return (
     <div className="TodoWrapper text-center">
-      <h1>Notes</h1>
+      <h1>Quick Notes</h1>
       <TodoForm addTodo={addTodo} />
       {todos.length === 0 ? (
         <div className="No-Todos">

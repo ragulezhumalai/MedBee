@@ -8,7 +8,6 @@ import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
-import Ballpit from './components/Ballpit.jsx';
 
 
 export default function App() {
@@ -41,20 +40,26 @@ else if(tab==="Tools"){
     color1="#000000"
     color2="#ffb500"
   color3="#5b0085"
-  className="main relative h-screen flex  bg-black text-white overflow-y-auto ">
+  className="main relative h-screen flex max-w-[100dvw] bg-black text-white overflow-y-auto ">
 
 
      <div className=""> 
       <NavBar switchTab={swi} /> 
       </div>  
       {/* Time bar Section */}
-<div className=' flex flex-col relative z-10 mx-3 mt-3'>
+<div className=' flex flex-col h-full w-[93dvw] sm:w-[98dvw] relative z-10 mx-3 mt-3'>
  
  <div className=" flex justify-center items my-6 max-w-[100%]"><Time /></div> 
-    {/* Main Section */}
-   <div className=' mt-6  flex flex-col-reverse justify-evenly items-center md:flex-row '>
-<Insnumbers />
-<div className=" w-[100%] max-w-3xl">{main}</div>
+
+                                   {/* Main Section */}
+
+   <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
+      <Insnumbers />
+      <div className=" w-[100%] max-w-3xl">
+        
+        {main}
+
+      </div>
    
     </div>
   

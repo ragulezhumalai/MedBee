@@ -22,11 +22,11 @@ export default function NavBar({switchTab}) {
         displacementScale={3}
         className="inset Tint"
       >
-        <ul className="flex inset m-0   justify-evenly  w-[100%] items-stretch px-4 py-2 gap-2"> 
-        <button onClick={()=>changeTab("Home")} className="">Home</button>
-        <button onClick={()=>changeTab("Tools")} className="">Tools</button>
-        <button onClick={()=>changeTab("Policies")} className="">Policies</button>
-        <button onClick={()=>changeTab("About")} className="">About</button>
+        <ul className="flex inset m-0   justify-evenly  w-[100%] items-center p-1  gap-2"> 
+        <button onClick={()=>changeTab("Home")} className="optionhover p-2">Home</button>
+        <button onClick={()=>changeTab("Tools")} className="optionhover p-2">Tools</button>
+        <button onClick={()=>changeTab("Policies")} className="optionhover p-2">Policies</button>
+        <button onClick={()=>changeTab("About")} className="optionhover p-2">About</button>
         </ul>
        
       </LiquidGlass>

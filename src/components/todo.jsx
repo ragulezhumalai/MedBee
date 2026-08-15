@@ -14,10 +14,9 @@ const Todo = ({ task, deleteTodo, state, editTodo }) => {
   });
 
   // Function to toggle the completion status of the task
-  const toggleComplete = (e) => {
+  const toggleComplete = () => {
     setCompleted(!completed);
-
-  }
+  };
 
   return (
     <div className="Todos">

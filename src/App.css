@@ -58,12 +58,12 @@
 
 /* Styling for the input field placeholder text */
 .todo-input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(250, 250, 250, 0.518);
 }
 
 /* Styling for the 'Add Task' button in the 'TodoForm' component */
 .todo-btn {
-  color: #00000092;
+  color: #ffffff;
   border: none;
   padding: 0.43rem 1rem;
   cursor: pointer;

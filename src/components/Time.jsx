@@ -41,7 +41,7 @@ const zones = {
          className=" max-w-full Tint border-white/30 top-10 ">
           <div className="inset m-0 py-3 flex">
       {Object.entries(zones).map(([label, zone]) => (
-        <div key={label} className=" optionhover text-center sm:mx-15 px-2">
+        <div key={label} className=" text-center sm:mx-15 px-2">
           <div className="text-m font-semibold font">{label}</div>
           <div className="text-m opacity-70">
             {formatTime(zone)}
