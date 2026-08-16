@@ -10,19 +10,18 @@ const changeTool=set=>{
 
   return (
     <LiquidGlass
-      blur={3.0}
+     borderRadius={30}
+        blur={3.0}
         contrast={1}
         brightness={1}
-        saturation={2.3}
+        saturation={2}
         elasticity={1}
         displacementScale={2}
         className="Tint">
-      <ul className='grid  grid-cols-1  mueOutput md:grid-cols-auto gap-auto p-4 m-5 text-left w-[95%] h-[90%] item-center'>
-        <button className='  p-4 inset m-1' onClick={()=>changeTool("Mue")} >MUE Edits</button>
-        <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("Auth")} >Auth lookup</button>
-        <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("Findcare")} >Findcare</button>
-        <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("alltools")} >All Tools</button>
-        <button className=' oultine-2 p-4 m-1 inset' onClick={()=>changeTool("alltools")} >All Tools</button>
+      <ul className='grid z-0 grid-cols-2 text-sm sm:text-lg  sm:grid-cols-4 gap-2 justify-evenly mueOutput md:grid-cols-auto gap-auto p-4 m-5 text-left h-[60dvh] sm:max-h-[60dvh] sm:max-w-[130%] item-center'>
+        <button className='  Menu  ' onClick={()=>changeTool("Mue")} > <img src="/src/assets/mue.png" alt="MUE" className="sm:w-16 m-2 sm:h-16 mx-auto" /> <div className=' text-center'>MUE Edits</div> </button>
+        <button className=' Menu ' onClick={()=>changeTool("Auth")} > <img src="/src/assets/auth.png" alt="Auth" className="sm:w-16 sm:h-16 m-2 mx-auto" /> <div className=' text-center'>Auth lookup</div> </button>
+        <button className=' Menu ' onClick={()=>changeTool("alltools")} > <img src="/src/assets/Clia.png" alt="Findcare" className="sm:w-16 m-2 sm:h-16 mx-auto" /> <div className=' text-center'>(coming soon)</div> </button>
       </ul>
 
 

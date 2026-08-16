@@ -6,7 +6,7 @@ import Todowrapper from './todowrapper.jsx';
 const Hometab = () => {
   return (
     <div 
-    className='insetxl h-[65dvh] sm:max-h-[65dvh] sm:max-w-[130%]'>
+    className=' h-[65dvh] sm:max-h-[65dvh] sm:max-w-[130%]'>
     <LiquidGlass
     borderRadius={30}
         blur={3.0}
