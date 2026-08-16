@@ -55,9 +55,7 @@ body{
   border-radius: 200px;
 }
 
-.authtab{
-  
-}
+
 
 .optionhover:hover{
   box-shadow: inset 0px 0px 2px 2px #ffffff50;
@@ -76,4 +74,23 @@ body{
 .hide-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none; /* IE/Edge */
+}
+
+.logo{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+
+  margin: 0;
+  padding: 0;
+  color:rgba(255, 255, 255, 0.605);
+
+  text-shadow: inset 0px 0px 10px 2px #ffffff50;
+}
+
+.backbtn{
+ color:rgb(248, 248, 248);
+  box-shadow: inset 0px 0px 5px 2px #ffffff97;
+  border-radius: 40px;
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
 }

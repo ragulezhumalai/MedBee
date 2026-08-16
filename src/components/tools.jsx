@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import Auth from './tools/auth'
 import Mue from './Mue'
 import ToolWrapper from './toolWrapper'
-
+import {LiquidGlass} from '@liquidglass/react'
 
 
 const tools = () => {
@@ -40,7 +40,8 @@ const tools = () => {
 
 
   return (
-    <div className="flex  p-2 flex-col" >{activetool===true ? <button className="outline w-15  m-1 p-1 inset" onClick={()=>setActiveTool(false)}>◀</button> : null} 
+    <div className="flex relative  p-2 flex-col" >{activetool===true ? 
+    <button className="outline  max-w-10 m-2 h-10 backbtn" onClick={()=>setActiveTool(false)}>◀</button> : null} 
   
     {activetool ? livetool : <ToolWrapper nowTools={settingTools} />  }
     {}
@@ -48,7 +49,7 @@ const tools = () => {
   
 
        
-    </div>
+    </div >
   )
 }
 

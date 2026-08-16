@@ -36,28 +36,29 @@ else if(tab==="Tools"){
       isRotate={false}
       mouseInteraction
     color1="#000000"
-    color2="#ffb500"
-  color3="#5b0085"
+    color2="#e2800ff8"
+  color3="#6f4383fd"
   className="main relative h-screen flex max-w-[100dvw] bg-black text-white overflow-y-auto ">
 
 
      <div className=""> 
+    
       <NavBar switchTab={swi} /> 
       </div>  
       {/* Time bar Section */}
-<div className=' flex flex-col h-full w-[93dvw] sm:w-[98dvw] relative z-10 mx-3 mt-3'>
+<div className=' flex flex-col h-full w-[93dvw] sm:w-[98dvw] relative z-10 mx-3 mt-6'>
  
- <div className=" flex justify-center items my-6 max-w-[100%]"><Time /></div> 
+ <div className=" flex justify-center items my-5 max-w-[100%]"> <Time /></div> 
 
                                    {/* Main Section */}
 
-   <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
-      <Insnumbers />
-      <div className=" w-[100%] max-w-3xl">
+  <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
+    <Insnumbers />
+    <div className=" w-[100%] max-w-3xl">
         
         {main}
 
-      </div>
+    </div>
    
     </div>
   
@@ -67,4 +68,6 @@ else if(tab==="Tools"){
     </Balatro>
   )
 }
+
+
     

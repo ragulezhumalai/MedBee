@@ -10,7 +10,8 @@ export default function NavBar({switchTab}) {
   }
 
   return (
-     <div className="fixed z-[999] top-5 left-1/2 -translate-x-1/2 w-[90%] md:max-w-[52.5%]">
+     <div className="fixed z-[999] top-5 left-1/2 flex items-center p-2 flex-col -translate-x-1/2 w-[90%] md:max-w-[52.5%]">
+
       <LiquidGlass
         borderRadius={30}
         blur={4.0}
