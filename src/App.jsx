@@ -8,6 +8,7 @@ import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
+import Clia from './components/tools/clia.jsx'
 
 
 export default function App() {
@@ -54,7 +55,8 @@ else if(tab==="Tools"){
 
   <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
     <Insnumbers />
-    <div className=" w-[100%] max-w-3xl">
+    <Clia />
+    <div className=" w-[100%] transits max-w-3xl">
         
         {main}
 
