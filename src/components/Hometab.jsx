@@ -9,7 +9,7 @@ const Hometab = () => {
     className=' h-[65dvh] sm:max-h-[65dvh] sm:max-w-[130%]'>
     <LiquidGlass
     borderRadius={30}
-        blur={3.0}
+        blur={2}
         contrast={1}
         brightness={1}
         saturation={2}

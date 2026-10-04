@@ -14,13 +14,13 @@ export default function NavBar({switchTab}) {
 
       <LiquidGlass
         borderRadius={30}
-        blur={4.0}
+        blur={2}
         
         contrast={2}
         brightness={1.1}
-        saturation={2.0}
+        saturation={2.3}
         elasticity={0.50}
-        displacementScale={3}
+        displacementScale={8}
         className="inset Tint"
       >
         <ul className="flex inset m-0   justify-evenly  w-[100%] items-center p-1  gap-2"> 

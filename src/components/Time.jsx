@@ -32,7 +32,7 @@ const zones = {
   return (
      <div className='p-0 m-0  max-w-[97%]'>  <LiquidGlass
      borderRadius={30}
-        blur={3.0}
+        blur={2 }
         contrast={1.5}
         brightness={1}
         saturation={2.3}

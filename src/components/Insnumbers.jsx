@@ -102,12 +102,12 @@ const Insnumbers = () => {
 
   return (
     <LiquidGlass 
-        blur={5}
+        blur={2}
         brightness={1}
         saturation={2.3}
-        displacementScale={2}
+        displacementScale={4}
         shadowIntensity={0.5}
-        shadowColor="rgba(0, 0, 0, 0.5)" className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center justify-between max-h-[55dvh] sm:h-[65vh] sm:max-h-[65vh] w-[100%] md:max-w-[30dvw] m-2.5 border-2 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        shadowColor="rgba(0, 0, 0, 0.5)" className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center justify-between max-h-[55dvh] sm:h-[65vh] sm:max-h-[65vh] w-[100%] md:max-w-[30dvw] m-2.5 border-1 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
       Insurance Phone Numbers
        <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
         <ul className="scrollbar-y-hidden scrollbar1">
