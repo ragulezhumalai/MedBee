@@ -1,4 +1,4 @@
-cliaListings.json filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
 src/cliaListings.json filter=lfs diff=lfs merge=lfs -text
 src/components/tools/cliaListings.json filter=lfs diff=lfs merge=lfs -text
 package.json !text !filter !merge !diff
