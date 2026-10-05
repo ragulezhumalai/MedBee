@@ -1,7 +1,13 @@
 import React from 'react'
 import cliadata from './cliaListings.json'
+import UseState from 'react'
 
 const Clia = () => {
+const [Clia, SetClia]= UseState("");
+const [Zip, SetZip]= UseState("");
+const [results, SetResults]= UseState(0);
+
+
 async function getLaboratoryByCliaId(cliaId) {
   const response = await fetch("/cliaListings.json");
 
@@ -15,14 +21,13 @@ async function getLaboratoryByCliaId(cliaId) {
 }
 
   return (
-    <div>
+    <div className="outline-2 h-[200px]">
+      Testing in process
         <form action="submit" onSubmit={(e) => {
             e.preventDefault();
             alert("Form submitted");
         }}>
             <input type="text" placeholder='Enter CLIA Number' className='' />
-            <input type="text" placeholder='Enter State' className='' />
-            <input type="text" placeholder='Enter City' className='' />
             <input type="text" placeholder='Enter Zip Code' className='' />
             <button type="submit" className=''>Submit</button>
         </form>
