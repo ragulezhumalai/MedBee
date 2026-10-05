@@ -1,11 +1,9 @@
 import React from 'react'
 import cliadata from './cliaListings.json'
-import UseState from 'react'
+
 
 const Clia = () => {
-const [Clia, SetClia]= UseState("");
-const [Zip, SetZip]= UseState("");
-const [results, SetResults]= UseState(0);
+
 
 
 async function getLaboratoryByCliaId(cliaId) {
@@ -22,7 +20,7 @@ async function getLaboratoryByCliaId(cliaId) {
 
   return (
     <div className="outline-2 h-[200px]">
-      Testing in process
+      Testing in process (CLIA Alpha)
         <form action="submit" onSubmit={(e) => {
             e.preventDefault();
             alert("Form submitted");
