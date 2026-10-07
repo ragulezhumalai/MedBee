@@ -24,10 +24,10 @@ export default function NavBar({switchTab}) {
         className="inset Tint"
       >
         <ul className="flex inset m-0   justify-evenly  w-[100%] items-center p-1  gap-2"> 
-        <button onClick={()=>changeTab("Home")} className="optionhover p-2">Home</button>
-        <button onClick={()=>changeTab("Tools")} className="optionhover p-2">Tools</button>
-        <button onClick={()=>changeTab("Policies")} className="optionhover p-2">Policies</button>
-        <button onClick={()=>changeTab("About")} className="optionhover p-2">About</button>
+        <button onClick={()=>changeTab("Home")} className="optionhover w-30 p-2">Home</button>
+        <button onClick={()=>changeTab("Tools")} className="optionhover w-30 p-2">Tools</button>
+        <button onClick={()=>changeTab("Policies")} className="optionhover w-30 p-2">Policies</button>
+        <button onClick={()=>changeTab("About")} className="optionhover w-30 p-2">About</button>
         </ul>
        
       </LiquidGlass>

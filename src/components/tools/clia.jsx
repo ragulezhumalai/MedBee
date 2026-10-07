@@ -1,33 +1,30 @@
 import React from 'react'
+import {useState} from 'react';
 import cliadata from './cliaListings.json'
 
 
 const Clia = () => {
+const [cliaNumber, setCliaNumber]= useState("");
+const [zipCode, setZipCode]= useState("");
+const [results, setResults]= useState([]);
+const [searched, setSearched]= useState(false);
 
+console.log(cliaNumber)
 
+ const handleSubmit =  () =>{
 
-async function getLaboratoryByCliaId(cliaId) {
-  const response = await fetch("/cliaListings.json");
-
-  if (!response.ok) {
-    throw new Error(`JSON file not found: ${response.status}`);
-  }
-
-  const listings = await response.json();
-
-  return listings.find((item) => item.cliaIdNumber === cliaId);
 }
 
   return (
-    <div className="outline-2 h-[200px]">
+    <div className="outline-2 h-[300px] p-5">
       Testing in process (CLIA Alpha)
-        <form action="submit" onSubmit={(e) => {
+        <form className="flex flex-col items-center p-2" action="submit" onSubmit={(e) => {
             e.preventDefault();
-            alert("Form submitted");
+            console.log("Form submitted");
         }}>
-            <input type="text" placeholder='Enter CLIA Number' className='' />
-            <input type="text" placeholder='Enter Zip Code' className='' />
-            <button type="submit" className=''>Submit</button>
+           CLIA ID: <input type="text" placeholder='Enter CLIA Number' onChange={(e)=>setCliaNumber(e.target.value)} className='outline-1 p-1 rounded-xl m-2' />
+           Zip Code: <input type="text" placeholder='Enter Zip Code' className='outline-1 m-2 p-1 rounded-xl' />
+            <button type="submit" className='w-30 rounded-xl p-1 bg-black'>Submit</button>
         </form>
 
 
