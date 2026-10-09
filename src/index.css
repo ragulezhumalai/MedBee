@@ -96,3 +96,30 @@ body{
   outline: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
 }
+
+.clia {
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 10px 15px;
+}
+
+.clia::-webkit-scrollbar {
+  display: none;
+}
+
+.singleclia{
+    padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(254, 254, 254, 0.251);
+  justify-content: space-between;
+  align-items: left;
+  border-radius: 30px;
+  color: white;
+  text-align: left;
+  margin: 0px 6px;
+  width: 100%;
+  box-shadow: inset 0px 0px 7px 2px #ffffff50;
+  border: 1px solid rgba(255, 255, 255, 0.605);
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

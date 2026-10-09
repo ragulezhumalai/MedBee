@@ -3,6 +3,7 @@ import Auth from './tools/auth'
 import Mue from './Mue'
 import ToolWrapper from './toolWrapper'
 import {LiquidGlass} from '@liquidglass/react'
+import Clia from './tools/clia'
 import back from '../assets/back.png'
 
 
@@ -32,6 +33,11 @@ const tools = () => {
   
   else if(currentTool==="Auth"){
     livetool=<Auth />
+   
+  }
+
+   else if(currentTool==="Clia"){
+    livetool=<Clia />
    
   }
 
