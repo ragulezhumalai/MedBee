@@ -48,7 +48,7 @@ const tools = () => {
 
   return (
     <div className="flex relative  p-2 flex-col" >{activetool===true ? 
-    <div  className="  max-w-10 m-2 h-10" onClick={()=>setActiveTool(false)}><img src={back} alt="Back" /></div> : null} 
+    <div  className="  max-w-10 m-1 h-10" onClick={()=>setActiveTool(false)}><img src={back} alt="Back" /></div> : null} 
   
     {activetool ? livetool : <ToolWrapper nowTools={settingTools} />  }
     {}

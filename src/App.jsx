@@ -8,6 +8,7 @@ import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
+import Clia from './components/tools/clia.jsx'
 
 
 

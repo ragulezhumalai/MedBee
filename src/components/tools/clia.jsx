@@ -31,28 +31,30 @@ const handleZipSubmit =  (e) =>{
         saturation={2}
         elasticity={1}
         displacementScale={2}
-        className="Tint  flex flex-col md:m-5 min-h-[55vh] h-[60vh] rounded-lg ">
-          CLIA Lookup (Beta)
+        className="Tint mueOutput flex flex-col min-h-[55vh] h-[60vh] rounded-lg ">
+        <p className="text-2xl mt-5 font-extrabold">CLIA Lookup (Beta)</p>
           <div className='flex flex-col md:flex-row items-center'>
+              
              <form className="flex flex-col items-center p-2" action="submit" onSubmit={handleCliaSubmit}>
-           Search by CLIA ID: <input type="text" placeholder='Enter CLIA Number' onChange={(e)=>setCliaNumber(e.target.value)} className='outline-1 p-1 rounded-xl m-2' />
-            <button type="submit" className='w-30 rounded-xl p-1 bg-black'>Submit</button>
+           Search by CLIA ID: <input type="text" placeholder='Enter CLIA Number' onChange={(e)=>setCliaNumber(e.target.value)} className=' border-5 outline-1 outline-blue-100/70 border-blue-100/50 hover:shadow-[0_0_20px_rgba(59,250,246)] transition duration-200 placeholder:text-sm placeholder:text-center p-1 rounded-3xl m-2' />
+            <button type="submit" className='w-30 inset rounded-xl p-1 todo-btn '>Search</button>
         </form>
         <div>(or)</div>
          <form className="flex flex-col items-center p-2" action="submit" onSubmit={handleZipSubmit}>
-           Search by Zip Code: <input type="text" placeholder='Enter Zip Code' onChange={(e)=>setZipCode(e.target.value)} className='outline-1 m-2 p-1 rounded-xl' />
-            <button type="submit" className='w-30 rounded-xl p-1 bg-black'>Submit</button>
+           Search by Zip Code: <input type="text" placeholder='Enter Zip Code' onChange={(e)=>setZipCode(e.target.value)} className='border-5 outline-1 outline-blue-100/70 border-blue-100/50 hover:shadow-[0_0_20px_rgba(59,250,246)] transition duration-200 placeholder:text-sm placeholder:text-center p-1 rounded-3xl m-2' />
+            <button type="submit" className='w-30  rounded-xl p-1 todo-btn'>Search</button>
         </form>
           </div>
        
-      <div className='flex flex-col items-center justify-center gap-2 p-4  overflow-y-auto h-[300px] w-full clia'>
+      <div className='flex flex-col items-center gap-2 overflow-y-auto h-[250px] w-full clia'>
         {results.map((item) => (
-          <p className="singleclia m-2">
-            <h3>Clia ID: {item.cliaIdNumber}</h3>
+          <p className="singleclia ">
+            <h3 className="font-bold">Clia ID: {item.cliaIdNumber}</h3>
             <p> Facility Address: <br /> {item.address} <br /> {item.city}, {item.state} {item.zipCode}</p>
           <p>CLIA Effective date: {item.certificateEffectiveDate}</p>
            <h3>CLIA Expiration date: {item.certificateExpirationDate}</h3>
           </p>
+          
         ))}
       </div>
 
@@ -62,7 +64,8 @@ const handleZipSubmit =  (e) =>{
 
 
 
-
+<p className="text-xs text-center my-2">
+  Official data derived from QCOR(qcor.cms.gov)</p>
 
     </LiquidGlass>
   )

@@ -12,7 +12,6 @@
 }
 
 body{
-    font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 525;
   font-style: normal;
@@ -35,7 +34,7 @@ body{
   100% { -webkit-filter: blur(0); filter: blur(0); opacity: 1; }
 }
 @keyframes focus-in-expand-fwd {
-  0% {  filter: blur(12px); opacity: 0; }
+  0% {  filter: blur(12px); opacity: 0; }+
   100% { filter: blur(0); opacity: 1; }
 }
 
@@ -101,6 +100,8 @@ body{
   overflow-y: auto;
   scrollbar-width: none;
   padding: 10px 15px;
+   box-shadow: inset 0px 0px 20px 2px #ffffff64;
+   border-radius:20px
 }
 
 .clia::-webkit-scrollbar {
@@ -108,17 +109,17 @@ body{
 }
 
 .singleclia{
-    padding: 10px 15px;
+    padding: 5px 10px;
   display: flex;
   flex-direction: column;
   background-color: rgba(254, 254, 254, 0.251);
   justify-content: space-between;
+  font-size: 0.8rem;
   align-items: left;
-  border-radius: 30px;
+  border-radius: 20px;
   color: white;
   text-align: left;
-  margin: 0px 6px;
-  width: 100%;
+  width: 95%;
   box-shadow: inset 0px 0px 7px 2px #ffffff50;
   border: 1px solid rgba(255, 255, 255, 0.605);
   animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
