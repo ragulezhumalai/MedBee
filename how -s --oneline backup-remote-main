@@ -1,0 +1,80 @@
+[33m805f0fd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mbackup-remote-main[m[33m)[m revert
+[33me9b5b8c[m revert
+[33mafc1baa[m pwa fix
+[33m9aba0cf[m Added PWA feature
+[33m03890ff[m V0.4.1 Revamped UI
+[33mc3aff32[m v0.3.4: Move CLIA Lookup from Alpha to Beta with CLIA ID and ZIP code search. Unstable release.
+[33mc976d13[m Minor fix 2
+[33meaf3fd5[m Minor Design changes
+[33m9684975[m Glitch fixed
+[33m48b1c18[m Clia aphla 0.3.3
+[33m0d60bdf[m fixes
+[33m22fc487[m fixed vercel error
+[33md716b14[m[33m ([m[1;32mbackup-local-main[m[33m)[m changes to large file managment
+[33m81fc95c[m changes to large file managment
+[33m7238c30[m added lfs
+[33m43554f8[m added lfs
+[33m7f8adfd[m Testing new tool
+[33mdbc5c8a[m Testing new tool
+[33md1b169e[m UI fixes 0.3.2
+[33mbdae096[m UI fixes 0.3.2
+[33m88317fb[m Major UI improvements V0.3.1
+[33m6765f74[m Major UI improvements V0.3.1
+[33mdb22ccc[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33m2edd64f[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33m42eb6f0[m Home screen optimization 0.2.6
+[33mc692c7e[m Home screen optimization 0.2.6
+[33m8c28860[m Minor fixes
+[33m34b3849[m Minor fixes
+[33m7826f1a[m Improved background quality
+[33m4388dcc[m Improved background quality
+[33mcf795b2[m Visual Changes 0.2.5
+[33m9e45baa[m Visual Changes 0.2.5
+[33mce0606a[m Fixed glass question mark issue
+[33m0972fdd[m Fixed glass question mark issue
+[33ma7f56e3[m Fixes of errors
+[33m8736160[m Fixes of errors
+[33m790a7b4[m Update todowrapper.jsx
+[33m387e649[m Update todowrapper.jsx
+[33mff90137[m issue fixed
+[33m4fc2efe[m issue fixed
+[33mcbc99c7[m Nano fix
+[33mdf14c7e[m Nano fix
+[33me538eda[m added Notes feature
+[33m3e30f70[m added Notes feature
+[33m86ee217[m Minor Fixes
+[33m6715117[m Minor Fixes
+[33m13d4f88[m Update App.jsx
+[33m0af2f22[m Update App.jsx
+[33m1db3bf0[m Update Hometab.jsx
+[33m0868fb2[m Update Hometab.jsx
+[33m0eb5432[m testing
+[33m84854d8[m testing
+[33me33a2fc[m Update Hometab.jsx
+[33m76fabb7[m Update Hometab.jsx
+[33me15db17[m fixed home image
+[33m537a229[m fixed home image
+[33m07a225a[m 0.2.4
+[33m5cb828b[m 0.2.4
+[33m352c559[m Minor Fixes 0.2.3
+[33m6ec57b4[m Minor Fixes 0.2.3
+[33m1101f87[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33m2abfbdf[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33mb80b95c[m Alpha Build 0.2.2
+[33m8742c1e[m Alpha Build 0.2.2
+[33m8aea322[m Update App.jsx
+[33m1c653bf[m Update App.jsx
+[33m4cf71fc[m Alpha Build 0.2.1
+[33m9b1071b[m Alpha Build 0.2.1
+[33mc9515d7[m Alpha build 0.2
+[33md9f36c2[m Alpha build 0.2
+[33m6fdf50d[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33m00d9e4a[m Merge branch 'main' of https://github.com/ragulezhumalai/MedBee
+[33m5b96f6a[m Fixed Vercel bridge bugs
+[33mf861bfe[m Fixed Vercel bridge bugs
+[33m3c06fbf[m Update App.jsx
+[33md36073c[m Update App.jsx
+[33md89838c[m Alpha Build 0.1
+[33m2621a6c[m Alpha Build 0.1
+[33m7c8b070[m Initial commit
+[33m8cb0e43[m Initial commit
