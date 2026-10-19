@@ -8,7 +8,8 @@ import Balatro from './components/Balatro.jsx'
 import Tools from './components/tools.jsx'
 import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
-import Clia from './components/tools/clia.jsx'
+import Clia from './components/tools/clia.jsx';
+import About from './components/About.jsx';
 
 
 
@@ -26,7 +27,7 @@ if(tab==="Home"){
 else if(tab==="Policies"){
   main= <div>Policies coming soon...</div>
 }else if(tab==="About"){
-  main= <div>About coming soon...</div>
+  main= <About />
 }
 else if(tab==="Tools"){
   main= <Tools />
@@ -55,7 +56,7 @@ else if(tab==="Tools"){
                                    {/* Main Section */}
 
   <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
-    <Insnumbers />
+   {tab === "About" ? null : <Insnumbers/>}
 
     <div className=" w-[100%] transits max-w-3xl">
         

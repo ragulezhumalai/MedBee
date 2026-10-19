@@ -20,7 +20,7 @@ const auth = () => {
         displacementScale={2}
         className='Tint mueOutput    min-h-[50%] h-[50%] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[60%]'>
           Auth Lookup Tools
-      <ul className="grid grid-cols-2  md:grid-cols-5 gap-5 p-4 text-left overflow-hidden md:m-5 min-h-[47vh] h-[47vh] rounded-lg item-center">
+      <ul className="grid grid-cols-2  md:grid-cols-5 gap-5 p-4 text-left overflow-y-auto no-scrollbar md:m-5 min-h-[47vh] h-[47vh] rounded-lg item-center">
         <li className=" Menu authtab flex items-center "><a href="https://www.cgsmedicare.com/medicare_dynamic/jc/pa/pa.aspx" target="_blank"> <img src={cgs} alt="CGS Medicare" className="sm:w-16 sm:h-16 m-2 mx-auto" /> CGS Medicare</a></li>
         <li className=" Menu authtab flex items-center  text-center"><a href="https://www.aetna.com/health-care-professionals/precertification/precertification-lists.html" target="_blank">  <img src={aetna} alt="Aetna" className="sm:w-16 sm:h-16 m-2 mx-auto" /> </a><div>Aetna</div></li>
         <li className=" Menu authtab flex items-center text-center"><a href="https://provider.healthybluemo.com/missouri-provider/resources/precertification-lookup" target="_blank"> <img src={anthem} alt="Anthem" className="sm:w-16 sm:h-16 m-2 mx-auto" /> </a><div>Anthem Missouri</div></li>

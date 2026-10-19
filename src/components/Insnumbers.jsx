@@ -1,5 +1,5 @@
 import { LiquidGlass } from '@liquidglass/react';
-import useState from 'react';
+import {useState} from 'react';
 
 const insurancePhones = {
 "1199SEIU FUNDS": "888-819-1199",
@@ -644,6 +644,11 @@ const insurancePhones = {
 
 const Insnumbers = () => {
 
+  const [searchTerm, setSearchTerm]=useState('');
+  const [insNumbers, setInsNumbers] = useState(insurancePhones)
+
+  console.log(searchTerm)
+
  
 
   return (
@@ -655,10 +660,12 @@ const Insnumbers = () => {
         shadowIntensity={0.5}
         shadowColor="rgba(0, 0, 0, 0.5)" className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center max-h-[55dvh] sm:h-[65vh] sm:max-h-[65vh] w-[100%] md:max-w-[30dvw] m-2.5 border-1 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
       <h2 className="p-2 text-xl">Insurance Phone Numbers</h2>
-    <div> <input type="text" placeholder="Search" onChange={(e) => setSearchTerm(e.target.value)} className='border-4 placeholder:text-sm placeholder:font-extralight  border-blue-100/50 hover:shadow-[0_0_20px_rgba(59,250,246)] transition duration-200  outline-1 outline-blue-100/70 m-2 rounded-3xl text-center font-bold' /></div>  
+    <div> <input type="text" placeholder="Search" onChange={(e) => setSearchTerm(e.target.value)} className='border-4 no-underline placeholder:text-sm placeholder:font-extralight  border-blue-100/50 focus:shadow-[0_0_20px_rgba(255,255,255)] transition duration-200 w-90 p-1 outline-1 outline-blue-100/70 m-2 rounded-3xl text-center' /></div>  
        <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
         <ul className="scrollbar-y-hidden scrollbar1">
-      {Object.entries(insurancePhones).map(([name, phone]) => (
+      {Object.entries(insNumbers).filter(([name, phone])=>{
+        return searchTerm.trim() === "" ? [name,phone] : name.toLowerCase().includes(searchTerm.toLowerCase())
+      }).map(([name, phone]) => (
         <div className='my-2 z-10 py-3 Todos Tint border-white border-white/30 text-xs bg-[rgba(0, 0, 0, 0.5)]' key={name}>
           <strong>{name}</strong> : {phone}
         </div>
