@@ -2,9 +2,10 @@ import {React,useState} from 'react'
 import Auth from './tools/auth'
 import Mue from './Mue'
 import ToolWrapper from './toolWrapper'
-import {LiquidGlass} from '@liquidglass/react'
+
 import Clia from './tools/clia'
 import back from '../assets/back.png'
+import Portals from './tools/portals'
 
 
 const tools = () => {
@@ -38,6 +39,10 @@ const tools = () => {
 
    else if(currentTool==="Clia"){
     livetool=<Clia />
+   
+  }
+    else if(currentTool==="Portals"){
+    livetool=<Portals />
    
   }
 

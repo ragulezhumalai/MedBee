@@ -31,8 +31,8 @@ const handleZipSubmit =  (e) =>{
         saturation={2}
         elasticity={1}
         displacementScale={2}
-        className="Tint mueOutput flex flex-col min-h-[55vh] h-[60vh] rounded-lg ">
-        <p className="text-2xl mt-5 font-extrabold">CLIA Lookup (Beta)</p>
+        className="Tint mueOutput flex flex-col min-h-[55vh] text-xs h-[60vh] rounded-lg ">
+        <p className="text-2xl mt-5 font-extrabold">CLIA Lookup</p>
           <div className='flex flex-col md:flex-row items-center'>
               
              <form className="flex flex-col items-center p-2" action="submit" onSubmit={handleCliaSubmit}>

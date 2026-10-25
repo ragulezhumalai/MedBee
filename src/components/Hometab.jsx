@@ -10,7 +10,7 @@ const Hometab = () => {
     <LiquidGlass
     borderRadius={30}
         blur={2}
-        contrast={1}
+        contrast={1.2}
         brightness={1}
         saturation={2}
         elasticity={1}

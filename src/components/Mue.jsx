@@ -33,20 +33,20 @@ if(result){
 
   return (
     <LiquidGlass 
-        blur={3}
+        borderRadius={30}
+        blur={2}
         
         contrast={1.2}
         brightness={1.1}
-        saturation={2.0}
+        saturation={2.3}
         elasticity={0.50}
-        tintColor="#162325"
-        displacementScale={1}
+        displacementScale={8}
       
-    className='mueOutput Tint min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[70%]'>
-      <div className='text-center font-bold text-2xl'><span className='text-3xl'>MUE Edits</span><br></br> Lookup</div>
+    className='mueOutput Tint min-h-[55vh] h-[60vh] rounded-lg flex flex-col  outline-2 outline-white/30  md:w-[80%]'>
+      <div className='text-center font-bold m-2 text-2xl'><span className='text-3xl'>MUE Edits</span><br></br> Lookup</div>
 
-      <form onSubmit={getMue} className='p-4 m-5 flex'>
-    <input type="text" onChange={e=>setCpt(e.target.value)} className='border-7 border-blue-100/50 focus:shadow-[0_0_30px_rgba(255,255,255)] transition duration-200  outline-1 outline-blue-100/70 p-2 m-2 rounded-3xl text-center font-bold' />
+      <form onSubmit={getMue} className='p-4  flex'>
+    <input type="text" onChange={e=>setCpt(e.target.value)} className='border-7 border-blue-100/50 focus:shadow-[0_0_30px_rgba(255,255,255)] max-w-90 transition duration-200  outline-1 outline-blue-100/70 p-2 m-2 rounded-3xl text-center font-bold' />
     <button
     children
     zIndex={2}
@@ -71,7 +71,8 @@ if(result){
           <p className="text-red-400">{output.error}</p>
         )}
       </div>
-      <p className="text-sm my-2">Official data sets obtained from cms.gov data sets<a href="https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-medically-unlikely-edits-mues" target="_blank" rel="noopener noreferrer"> ✦</a></p>
+      <p className="text-xs">CMS releases updates quarterly.</p>
+      <p className="text-xs text-center mx-2 mb-2">Official data sets obtained from cms.gov data sets <a href="https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-medically-unlikely-edits-mues" target="_blank" rel="noopener noreferrer" className="bg-green-500/80 rounded-lg px-1"> Source ☍</a></p>
     
     </LiquidGlass>
   )

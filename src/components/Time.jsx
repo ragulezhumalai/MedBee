@@ -30,12 +30,12 @@ const zones = {
 
 
   return (
-     <div className='p-0 m-0  max-w-[97%]'>  <LiquidGlass
+     <div className='p-0 m-0 z-10  max-w-[97%]'>  <LiquidGlass
      borderRadius={30}
         blur={2 }
-        contrast={1.5}
+        contrast={1.2}
         brightness={1}
-        saturation={2.3}
+        saturation={2}
         elasticity={1}
         displacementScale={2}
          className=" max-w-full Tint  border-white/30 top-10 ">

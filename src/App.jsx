@@ -3,12 +3,9 @@ import NavBar from './components/NavBar.jsx'
 import Time from './components/Time.jsx'
 import Hometab from './components/Hometab.jsx'
 import './App.css'
-import Mue from './components/Mue.jsx';
-import Balatro from './components/Balatro.jsx'
+import Balatro from './components/Balatronew.jsx'
 import Tools from './components/tools.jsx'
-import Auth from './components/tools/auth.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
-import Clia from './components/tools/clia.jsx';
 import About from './components/About.jsx';
 
 
@@ -32,45 +29,54 @@ else if(tab==="Policies"){
 else if(tab==="Tools"){
   main= <Tools />
 }
-  return (
-    
+return (
+  <div className="main relative isolate flex h-screen max-w-[100dvw] overflow-y-auto bg-black text-white">
     <Balatro
-     pixelFilter={2000}
-      isRotate={false}
-      mouseInteraction
-    color1="#000000"
-    color2="#e2800ff8"
-  color3="#6f4383fd"
-  className="main relative h-screen flex max-w-[100dvw] bg-black text-white overflow-y-auto ">
+    null
+      color1="#833EA3"
+      color2="#FF9D33"
+      color3="#000000"
+      swirl={0.5}
+      pixelSize={0}
+      mouseInteraction={true}
+      contrast={3}
+      lighting={0.5}
+      speed={0.5}
+      rotationSpeed={1}
+      scale={1.2}
+      detail={3}
+      crt={0}
+      mouseStrength={1}
+      clickSwirl={false}
+      intro
+      lightMode={false}
+      className="pointer-events-none fixed inset-0 z-0"
+      style={{ position: 'fixed', inset: 0, zIndex: 0 }}
+    />
 
-
-     <div className=""> 
-    
-      <NavBar switchTab={swi} /> 
-      </div>  
+    <div className="relative z-10 flex h-full w-full">
+      <div>
+        <NavBar switchTab={swi} />
+      </div>
       {/* Time bar Section */}
-<div className=' flex flex-col h-full w-[93dvw] sm:w-[98dvw] relative z-10 mx-3 mt-6'>
+      <div className="relative mx-3 mt-6 flex h-full w-[93dvw] flex-col sm:w-[98dvw]">
  
- <div className=" flex justify-center items my-5 max-w-[100%]"> <Time /></div> 
+        <div className="my-5 flex max-w-[100%] items justify-center"><Time /></div>
 
-                                   {/* Main Section */}
+        {/* Main Section */}
 
-  <div className=' mt-6 p-2 flex flex-col-reverse justify-evenly items-center scrollbar-hidden sm:max-h-[75dvh]   md:flex-row '>
-   {tab === "About" ? null : <Insnumbers/>}
+        <div className="mt-6 flex flex-col-reverse items-center justify-evenly p-2 scrollbar-hidden sm:max-h-[75dvh] md:flex-row">
+          {tab === "About" ? null : <Insnumbers />}
 
-    <div className=" w-[100%] transits max-w-3xl">
-        
-        {main}
-
+          <div className="transits w-[100%] max-w-[90 dvw]">
+            {main}
+          </div>
+        </div>
+      </div>
     </div>
-   
-    </div>
-  
-  
   </div>
-      
-    </Balatro>
-  )
+
+)
 }
 
 

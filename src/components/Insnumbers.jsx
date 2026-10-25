@@ -660,7 +660,7 @@ const Insnumbers = () => {
         shadowIntensity={0.5}
         shadowColor="rgba(0, 0, 0, 0.5)" className=" scrollbar1 inset backdrop:blur-2xl bg-[#ffffff14] flex-col relative text-center max-h-[55dvh] sm:h-[65vh] sm:max-h-[65vh] w-[100%] md:max-w-[30dvw] m-2.5 border-1 rounded-2xl border-white/30 scrollbar-hidden " style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
       <h2 className="p-2 text-xl">Insurance Phone Numbers</h2>
-    <div> <input type="text" placeholder="Search" onChange={(e) => setSearchTerm(e.target.value)} className='border-4 no-underline placeholder:text-sm placeholder:font-extralight  border-blue-100/50 focus:shadow-[0_0_20px_rgba(255,255,255)] transition duration-200 w-90 p-1 outline-1 outline-blue-100/70 m-2 rounded-3xl text-center' /></div>  
+    <div> <input type="text" placeholder="Search" onChange={(e) => setSearchTerm(e.target.value)} className='border-4 no-underline placeholder:text-sm placeholder:font-extralight  border-blue-100/50 focus:shadow-[0_0_20px_rgba(255,255,255)] transition duration-200 max-w-100 p-1 outline-1 outline-blue-100/70 m-2 rounded-3xl text-center' /></div>  
        <div className=' w-[90%] mx-4 scrollbar1 hide-scrollbar text-center h-[100%] overflow-y-auto z-999'>
         <ul className="scrollbar-y-hidden scrollbar1">
       {Object.entries(insNumbers).filter(([name, phone])=>{

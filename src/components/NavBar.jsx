@@ -16,9 +16,9 @@ export default function NavBar({switchTab}) {
         borderRadius={30}
         blur={2}
         
-        contrast={2}
+        contrast={1.2}
         brightness={1.1}
-        saturation={2.3}
+        saturation={2}
         elasticity={0.50}
         displacementScale={8}
         className="inset Tint"
