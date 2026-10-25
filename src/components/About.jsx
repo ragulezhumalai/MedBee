@@ -1,6 +1,6 @@
 import React from 'react'
 import { LiquidGlass } from '@liquidglass/react';
-import logo from "/src/assets/rm_logo1.PNG"
+import logo from "/src/assets/rm_logo1.png"
 
 const About = () => {
   return (
