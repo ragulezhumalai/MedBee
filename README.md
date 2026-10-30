@@ -18,26 +18,6 @@ The Portals feature is also marked as coming soon.
 - Node.js
 - npm
 
-## Getting Started
-
-Install dependencies and start the Vite development server:
-
-```sh
-npm install
-npm run dev
-```
-
-Vite prints the local URL in the terminal, typically `http://localhost:5173`.
-
-## Available Scripts
-
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the development server |
-| `npm run build` | Build the production site into `dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
-
 ## Data and Use
 
 Lookup searches are processed locally in the browser using datasets bundled with the app; they do not query a live service. The CLIA listing is derived from CMS's QCOR dataset. Other references, such as payer contact details and authorization links, may come from non-CMS sources. Because reference data and payer URLs may change, verify them with the appropriate official source before using them for operational decisions. RCM Matrix is a reference aid; it does not replace payer guidance or professional judgment.
