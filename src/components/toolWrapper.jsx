@@ -30,7 +30,7 @@ const changeTool=set=>{
         <button className=' Menu ' onClick={()=>changeTool("Auth")} > <img src={auth} alt="Auth" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>Auth lookup</div> </button>
         <button className=' Menu ' onClick={()=>changeTool("Npi")} > <img src={npi} alt="Auth" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>NPI Lookup</div> </button>
         <button className=' Menu ' onClick={()=>changeTool("Date")} > <img src={date} alt="Date" className="sm:w-25 sm:h-25 m-2 mx-auto" /><div className=' text-center'>Coming Soon</div> </button>
-        {/* <button className=' Menu ' onClick={()=>changeTool("Portals")} > <img src={portals} alt="Portals" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>Coming Soon!</div> </button> */}
+        <button className=' Menu' onClick={()=>changeTool("Portals")} > <img src={portals} alt="Portals" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>Coming Soon!</div> </button>
       </ul>
 
 

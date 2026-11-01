@@ -6,7 +6,7 @@ import ToolWrapper from './toolWrapper'
 import Clia from './tools/clia'
 import back from '../assets/back.png'
 import Portals from './tools/portals'
-import Npilookup from './tools/npiLookup'
+import Npilookup from './tools/npilookup'
 
 
 const tools = () => {
