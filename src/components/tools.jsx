@@ -6,6 +6,7 @@ import ToolWrapper from './toolWrapper'
 import Clia from './tools/clia'
 import back from '../assets/back.png'
 import Portals from './tools/portals'
+import Npilookup from './tools/npiLookup'
 
 
 const tools = () => {
@@ -43,6 +44,11 @@ const tools = () => {
   }
     else if(currentTool==="Portals"){
     livetool=<Portals />
+   
+  }
+
+   else if(currentTool==="Npi"){
+    livetool=<Npilookup />
    
   }
 

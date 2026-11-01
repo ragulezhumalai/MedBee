@@ -31,7 +31,7 @@ const handleZipSubmit =  (e) =>{
         saturation={2}
         elasticity={1}
         displacementScale={2}
-        className="Tint mueOutput flex flex-col min-h-[55vh] text-xs h-[60vh] rounded-lg ">
+        className="Tint mueOutput flex flex-col min-h-[50vh] text-xs h-[55vh] rounded-lg ">
         <p className="text-2xl mt-5 font-extrabold">CLIA Lookup</p>
           <div className='flex flex-col md:flex-row items-center'>
               
@@ -46,9 +46,9 @@ const handleZipSubmit =  (e) =>{
         </form>
           </div>
        
-      <div className='flex flex-col items-center gap-2 overflow-y-auto h-[250px] w-full clia'>
+      <div className='flex flex-col items-center gap-2 overflow-y-auto h-[250px] w-full'>
         {results.map((item) => (
-          <p className="singleclia ">
+          <p className="singleclia">
             <h3 className="font-bold">Clia ID: {item.cliaIdNumber}</h3>
             <p> Facility Address: <br /> {item.address} <br /> {item.city}, {item.state} {item.zipCode}</p>
           <p>CLIA Effective date: {item.certificateEffectiveDate}</p>
@@ -58,14 +58,7 @@ const handleZipSubmit =  (e) =>{
         ))}
       </div>
 
-
-
-
-
-
-
-<p className="text-xs text-center my-2">
-  Official data derived from QCOR(qcor.cms.gov)</p>
+<p className="text-xs text-center my-2">Official data sets obtained from qcor.cms.gov data sets <a href="https://qcor.cms.gov/advanced_find_provider.jsp?which=4&backReport=active_CLIA.jsp" target="_blank" rel="noopener noreferrer" className="bg-green-500/80 rounded-lg px-1"> Source ☍</a></p>
 
     </LiquidGlass>
   )

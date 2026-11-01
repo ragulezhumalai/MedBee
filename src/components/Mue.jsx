@@ -1,5 +1,5 @@
 import {React,useState} from 'react';
-import Muedata from '../mueData.json';
+import Muedata from '../mueData_V1012026.json';
 import { LiquidGlass } from '@liquidglass/react';
 
 const Mue = () => {
@@ -71,6 +71,7 @@ if(result){
           <p className="text-red-400">{output.error}</p>
         )}
       </div>
+       <p className="text-xs">Latest MUE updates as of Q4 2026 (effective 10/01/2026)</p>
       <p className="text-xs">CMS releases updates quarterly.</p>
       <p className="text-xs text-center mx-2 mb-2">Official data sets obtained from cms.gov data sets <a href="https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-medically-unlikely-edits-mues" target="_blank" rel="noopener noreferrer" className="bg-green-500/80 rounded-lg px-1"> Source ☍</a></p>
     

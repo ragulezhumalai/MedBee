@@ -7,6 +7,7 @@ import Balatro from './components/Balatronew.jsx'
 import Tools from './components/tools.jsx'
 import Insnumbers from './components/Insnumbers.jsx';
 import About from './components/About.jsx';
+import Npilookup from './components/tools/npilookup.jsx'
 
 
 
@@ -29,6 +30,10 @@ else if(tab==="Policies"){
 else if(tab==="Tools"){
   main= <Tools />
 }
+
+
+
+
 return (
   <div className="main relative isolate flex h-screen max-w-[100dvw] overflow-y-auto bg-black text-white">
     <Balatro

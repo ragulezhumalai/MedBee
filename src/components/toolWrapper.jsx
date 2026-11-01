@@ -6,6 +6,7 @@ import auth from '../assets/auth.png'
 import clia from '../assets/Clia.png'
 import portals from '../assets/portals.png'
 import date from '../assets/date.png'
+import npi from '../assets/npi.png'
 
 const ToolWrapper = ({nowTools}) => {
 
@@ -27,6 +28,7 @@ const changeTool=set=>{
         <button className='  Menu  ' onClick={()=>changeTool("Mue")} > <img src={mue} alt="MUE" className="  sm:w-25 sm:h-25 mx-auto" /> <div className=' text-center'>MUE Edits</div> </button>
          <button className=' Menu ' onClick={()=>changeTool("Clia")} > <img src={clia} alt="Clia" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>CLIA Lookup</div> </button>
         <button className=' Menu ' onClick={()=>changeTool("Auth")} > <img src={auth} alt="Auth" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>Auth lookup</div> </button>
+        <button className=' Menu ' onClick={()=>changeTool("Npi")} > <img src={npi} alt="Auth" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>NPI Lookup</div> </button>
         <button className=' Menu ' onClick={()=>changeTool("Date")} > <img src={date} alt="Date" className="sm:w-25 sm:h-25 m-2 mx-auto" /><div className=' text-center'>Coming Soon</div> </button>
         {/* <button className=' Menu ' onClick={()=>changeTool("Portals")} > <img src={portals} alt="Portals" className="sm:w-25 sm:h-25 m-2 mx-auto" /> <div className=' text-center'>Coming Soon!</div> </button> */}
       </ul>

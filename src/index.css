@@ -128,3 +128,9 @@ body{
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.logoshadow:hover{
+  filter:drop-shadow(0px 0px 10px #002aff);
+ 
+  transition: 0.3s;
+}
